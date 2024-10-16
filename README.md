@@ -1,6 +1,6 @@
 # Fake cryptographic number generator
 
-Always returns 0.
+Always returns the same value.
 
 For cryptographic research purpose.
 
