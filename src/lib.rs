@@ -2,6 +2,12 @@ use rand_core::{CryptoRng, Error, RngCore};
 
 pub struct FakeCryptoRng {}
 
+impl FakeCryptoRng {
+    pub fn new() -> Self {
+        Self {}
+    }
+}
+
 impl RngCore for FakeCryptoRng {
     fn next_u32(&mut self) -> u32 {
         0
